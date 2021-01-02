@@ -80,7 +80,7 @@ b.classroom.teacher.name = 'Dmitry';
 
 
 function sumStr1(a, b) { // Такой синтаксес
-    return (Number(a) + Number(b)).toString();
+    return String((Number(a) + Number(b)));
 }
 function sumStr2(a, b) { // Такой синтаксес
     return (+a + +b).toString();
