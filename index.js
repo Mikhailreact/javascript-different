@@ -54,7 +54,7 @@ console.log(result);
 /*let age = 18;
 let age2 = age;*/
 
-const a = {
+/*const a = {
     name: 'it-kamasutra.com',
     protocol: "https",
     maxStudentCount: 10,
@@ -68,16 +68,17 @@ const a = {
     }
 }
 
-/*let b = {...a};
+/!*let b = {...a};
 b.classroom.teacher.name = 'Dmitry';
-console.log(a)*/
+console.log(a)*!/
 let b = {...a};// поверхностное копирование // shallow copy
 b.classroom = {...a.classroom};// deep copy // глубокое копирование
 b.classroom.teacher = {...a.classroom.teacher};// deep copy // глубокое копирование
 b.students = [...a.students];// deep copy // глубокое копирование
 
-b.classroom.teacher.name = 'Dmitry';
+b.classroom.teacher.name = 'Dmitry';*/
 
+/*
 
 function sumStr1(a, b) { // Такой синтаксес
     return String((Number(a) + Number(b)));
@@ -87,6 +88,19 @@ function sumStr2(a, b) { // Такой синтаксес
 }
 const dumStr3 = (a, b) => (+a + +b).toString(); // Стрелочная функция Такой синтаксис
 
+function sumStr4(a,b) {
+    const num1 = Number(a);
+    const num2 = Number(b);
+    return String(num1 + num2)
+}
 
+function sumStr5(a,b) {
+    return ""+(a- -b)
+}
 
+function sumStr6(a,b) {
+    return (+a+ +b)+''
+}
+
+*/
 
